@@ -1,0 +1,29 @@
+{
+  "name": "m.lunoe.dk",
+  "version": "1.0.0",
+  "description": "Personal website for mlunoe",
+  "main": "app/js/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "compass": "0.1.0",
+    "events": "1.1.0",
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "oauth": "0.9.14",
+    "request": "2.37.0",
+    "socket.io": "1.0.6",
+    "twit": "2.2.4",
+    "url": "0.11.0",
+    "util": "0.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "compass watch app/scss/",
+    "start": "node ./scripts/web-server.js"
+  },
+  "author": "mlunoe <https://github.com/mlunoe>",
+  "license": "MIT"
+}

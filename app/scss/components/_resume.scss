@@ -1,0 +1,236 @@
+#resume {
+  // padding: 30px;
+}
+
+#resume li {
+  padding-right: 20px;
+  word-wrap: break-word;
+  padding-bottom: 7px;
+}
+
+#resume ul br
+{
+  clear: left;
+}
+
+#resume .social a {
+  margin-right: 12px;
+}
+
+#resume .section .content {
+  @include content-layout(false);
+}
+
+#resume .section h2 {
+ @include label-layout(false)
+}
+
+#resume .headline {
+  width: 100%;
+}
+
+#resume .picture {
+  background-size: 140px 140px;
+  width: 140px;
+  height: 140px;
+  border: 5px solid $color-dark;
+  //float: right;
+  top: 0;
+  margin: 1.5em auto 0;
+
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+#resume .picture-wrapper {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+#resume .first {
+  padding-top: 0;
+  margin-top: 25px;
+}
+
+#resume h1.name {
+  margin: 0;
+}
+
+#resume .headline h3 {
+  margin: 0;
+}
+
+#resume .contact {
+  margin-bottom: 50px;
+}
+
+#resume .contact .content {
+  width: 12.5em;
+  margin: 0 auto;
+}
+
+#resume .contact h2 {
+  margin-bottom: 0;
+}
+
+// #resume .contact table td a,
+// #resume .contact table td span,
+// #resume .contact table td div {
+//   // text-align: center;
+//   vertical-align: middle;
+// }
+
+#resume .contact .value {
+  padding-left: 1em;
+  //vertical-align: middle;
+}
+
+#resume .section h2 {
+  //background: image-url("resume-icons.png") 100% -152px transparent no-repeat;
+}
+
+#resume .section {
+  clear: both;
+  border-top: 1px solid $color-white;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+#resume .position .company-name,
+#resume .education .school-name,
+#resume .certification .certification-name,
+#resume .patent .patent-title,
+#resume .publication .publication-title {
+  float: left;
+
+}
+
+#resume .position .company-name,
+#resume .education .school-name, {
+  margin-bottom: 24px;
+  img {
+    width: 48px;
+    margin-top: 14px;
+    margin-bottom: -18px;
+    margin-right: 10px;
+    background: #3f454c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+}
+
+#resume .position .title,
+#resume .education .program,
+#resume .certification .certificate-details,
+#resume .patent .patent-details,
+#resume .publication .publication-details {
+  clear: both;
+}
+
+#resume .section .job-summary,
+#resume .section .notes,
+#resume .section .activities,
+#resume .section .patent-summary,
+#resume .section .publication-summary {
+  padding: 15px 0;
+  clear: both;
+}
+
+#resume .section .timestamp {
+  float: right;
+}
+
+#resume .section {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 42em) {
+  #resume {
+    // padding: 60px;
+  }
+
+  #resume .picture {
+    position: absolute;
+    right: 0;
+    margin: -5em 0 0;
+    border-color: $color-orange;
+  }
+
+  #resume .headline {
+    width: 60%
+  }
+
+  #resume .picture-wrapper {
+    height: 0;
+  }
+
+  #resume .contact .content {
+    width: 100%;
+  }
+
+  #resume .section .content {
+    @include content-layout
+  }
+
+  #resume .section h2 {
+   @include label-layout
+  }
+  #resume .headline {
+
+  }
+
+}
+@media screen and (min-width: 62em) {
+  #resume {
+    // padding: 30px;
+  }
+
+  #resume .headline {
+    width: 70%
+  }
+
+  #resume .section .content {
+    @include content-layout(false)
+  }
+
+  #resume .section h2 {
+   @include label-layout(false)
+  }
+
+  #resume .headline {
+
+  }
+
+}
+
+@media screen and (min-width: 90em) {
+  #resume {
+    // padding: 60px;
+  }
+
+  #resume .picture {
+    background-size: 280px 280px;
+    width: 280px;
+    height: 280px;
+  }
+
+  #resume .headline {
+    width: 60%
+  }
+
+  #resume .section .content {
+    @include content-layout
+  }
+
+  #resume .section h2 {
+   @include label-layout
+  }
+
+  #resume .headline {
+
+  }
+}

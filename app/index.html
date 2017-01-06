@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="m.lunoe">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+  <meta property="og:image" content="img/musicSuggest.jpg" />
+  <!-- <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="icon" href="favicon.png"> -->
+  <title>Michael Lunøe</title>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <!-- <link rel="stylesheet" href="css/font-awesome-corp.css"/> -->
+  <!-- <link rel="stylesheet" href="css/font-awesome-ext.css"/> -->
+  <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cardo:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome-social.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="http://m.lunoe.dk:8000/socket.io/socket.io.js"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="lib/angular/angular-resource.js"></script>
+  <!-- tooltip/stackoverflow and modals -->
+  <script src="lib/ui-bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

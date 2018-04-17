@@ -103,6 +103,14 @@ function HomeCtrl($scope, $dialog, socket, StackOverflowService, GitHubService) 
 
   $scope.portfolio = [
     {
+      name: "Square - Dashboard",
+      img: "img/square-dashboard.png",
+      img_small: "img/square.jpg",
+      summary: "Frontend built with Ember CLI and Ruby on Rails. Web frontend platform work (CI/CD, test builder/runner, assets build and pipeline)",
+      description: "<p><a ng-href=\"https://squareup.com/pos/dashboard\" target=\"_blank\">Square Dashboard</a> is the main place to manage merchant businesses. You can see sales reports, manage employees and inventory, set up appointments and take payments through the virtual terminal. Being a repository consisting of many sub-applications with more than a 100 active contributors there was a dire need for code isolation and separation. I worked to modernize tools, upgrade outdates modules and roll out a new build for the tests - run locally and with CI/CD - migrating the application off of Sprockets and moving the application into a modern client side application world.</p>",
+      url: "https://squareup.com/pos/dashboard"
+    },
+    {
       name: "DC/OS",
       img: "img/dcos-large.jpg",
       img_small: "img/dcos-icon.png",

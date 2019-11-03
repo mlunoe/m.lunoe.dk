@@ -4,7 +4,7 @@ Personal webpage / resume
 # Run locally
 
 - `npm i`
-- `sudo gem install compass`
+- `gem install compass`
 - Change `app/js/services.js` to point to dev socket: `var socket = io.connect('http://localhost:8000');`
 - `npm run watch`
 - `npm start`
@@ -12,6 +12,11 @@ Personal webpage / resume
 
 
 # Setup on server
+
+## Copy local files to server (remember to replace <user>)
+```sh
+scp -r ./app/ <user>@m.lunoe.dk:/var/www/m.lunoe.dk
+```
 
 ## Copy services/m.lunoe.dk.service to /etc/systemd/system
 ```sh

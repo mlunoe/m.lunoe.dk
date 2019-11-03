@@ -96,6 +96,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.social a:hover {
+  text-decoration: none;
+}
+
 i {
   color: $color-white;
   padding-top: .35em;
@@ -643,6 +647,7 @@ button.close {
 /* main styles */
 .container {
   padding: 1.8em;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 42em) {

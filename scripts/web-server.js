@@ -9,7 +9,6 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 var events = require('events');
-var request = require('request');
 var zlib = require('zlib');
 var Twit = require('twit');
 var twitConfig = require('../config/twit-config');
@@ -47,7 +46,7 @@ function HttpServer(handlers) {
   this.server = http.createServer(this.handleRequest_.bind(this));
 
   // Hook Socket.io into Express
-  var io = require('socket.io').listen(this.server, { log: false });
+  var io = require('socket.io')(this.server, { log: false });
 
   io.sockets.on('connection', function (socket) {
     twit.get('statuses/user_timeline', {include_rts: true, exclude_replies: false}, function (err, reply, response) {
@@ -86,7 +85,7 @@ function HttpServer(handlers) {
 HttpServer.prototype.start = function(port) {
   this.port = port;
   this.server.listen(port);
-  util.puts('Http Server running at http://localhost:' + port + '/');
+  console.log('Http Server running at http://localhost:' + port + '/');
 };
 
 HttpServer.prototype.parseUrl_ = function(urlString) {
@@ -100,7 +99,7 @@ HttpServer.prototype.handleRequest_ = function(req, res) {
   if (req.headers['user-agent']) {
     logEntry += ' ' + req.headers['user-agent'];
   }
-  util.puts(logEntry);
+  console.log(logEntry);
   req.url = this.parseUrl_(req.url);
   var handler = this.handlers[req.method];
   if (!handler) {
@@ -155,8 +154,8 @@ StaticServlet.prototype.sendError_ = function(req, res, error) {
   res.write('<title>Internal Server Error</title>\n');
   res.write('<h1>Internal Server Error</h1>');
   res.write('<pre>' + escapeHtml(util.inspect(error)) + '</pre>');
-  util.puts('500 Internal Server Error');
-  util.puts(util.inspect(error));
+  console.log('500 Internal Server Error');
+  console.log(util.inspect(error));
 };
 
 StaticServlet.prototype.sendMissing_ = function(req, res, path) {
@@ -173,7 +172,7 @@ StaticServlet.prototype.sendMissing_ = function(req, res, path) {
     ' was not found on this server.</p>'
   );
   res.end();
-  util.puts('404 Not Found: ' + path);
+  console.log('404 Not Found: ' + path);
 };
 
 StaticServlet.prototype.sendForbidden_ = function(req, res, path) {
@@ -189,7 +188,7 @@ StaticServlet.prototype.sendForbidden_ = function(req, res, path) {
     escapeHtml(path) + ' on this server.</p>'
   );
   res.end();
-  util.puts('403 Forbidden: ' + path);
+  console.log('403 Forbidden: ' + path);
 };
 
 StaticServlet.prototype.sendRedirect_ = function(req, res, redirectUrl) {
@@ -206,7 +205,7 @@ StaticServlet.prototype.sendRedirect_ = function(req, res, redirectUrl) {
     '">here</a>.</p>'
   );
   res.end();
-  util.puts('301 Moved Permanently: ' + redirectUrl);
+  console.log('301 Moved Permanently: ' + redirectUrl);
 };
 
 StaticServlet.prototype.sendFile_ = function(req, res, path) {

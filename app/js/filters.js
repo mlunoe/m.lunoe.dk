@@ -26,7 +26,7 @@
 					return;
 				}
 				return String(text).replace(/@[\w]+/g, function(m) {
-						return "<a class='anchor' href='http://www.twitter.com/" + m.replace('@', '') + "'>" + m + "</a>";
+						return "<a class='anchor' href='https://www.twitter.com/" + m.replace('@', '') + "'>" + m + "</a>";
 				});
 			};
 		})

@@ -131,16 +131,16 @@ function HomeCtrl($scope, $dialog, socket, StackOverflowService, GitHubService) 
       img: "img/Nordea-Nexus.jpg",
       img_small: "img/Nordea-Nexus-small.jpg",
       summary: "User experince, concept development, and client side development",
-      description: "<p>In a team of 4 frontend and 5 backend developers we developed a web based service, providing research, facts and analyses for Nordea customers, both in an open and locked in environment. My areas, in particular, consisted of User experince, concept development, and client side development. This larger <a ng-href='http://angularjs.org/''>AngularJS</a> project for <a ng-href='http://www.nordea.com/''>Nordea</a> was launched December 4th. 2013 and is still under development. <a ng-href='https://nexus.nordea.com/'>Nexus</a> is responsive, has IE8+ support and requires a high level of security.</p>",
-      url: "http://www.nordeamarkets.com/nordea+markets/what+we+do/e-markets+nexus/1662852.html"
+      description: "<p>In a team of 4 frontend and 5 backend developers we developed a web based service, providing research, facts and analyses for Nordea customers, both in an open and locked in environment. My areas, in particular, consisted of User experince, concept development, and client side development. This larger <a ng-href='https://angularjs.org/''>AngularJS</a> project for <a ng-href='https://www.nordea.com/''>Nordea</a> was launched December 4th. 2013 and is still under development. <a ng-href='https://nexus.nordea.com/'>Nexus</a> is responsive, has IE8+ support and requires a high level of security.</p>",
+      url: "https://www.nordeamarkets.com/nordea+markets/what+we+do/e-markets+nexus/1662852.html"
     },
     {
       name: "Roskilde Festival Music Suggest app",
       img: "img/musicSuggest.jpg",
       img_small: "img/musicSuggest-small.jpg",
       summary: "Graphical design, user experience, concept development and development of <b>Roskilde Festival Music Suggest app</b>",
-      description: "<p>In this project I did graphical design, user experience, concept development and software development of the app. It is the product of voluntary work with <a ng-href=\"https://twitter.com/erik_beus\" target=\"_blank\">Erik Beuschau</a>. The application won the <a ng-href=\"http://labs.roskilde-festival.dk\" target=\"_blank\">Roskilde Festival App Contest</a> two years in a row and has received much positive feedback in the <a ng-href=\"https://itunes.apple.com/us/app/roskilde-festival-music-suggest/id660891678?mt=8\" target=\"_blank\">App Store</a>.</p><p>This project was, for the time being, a culmination of what I have learnt about concept development, design, user experience, user involvement, information architecture and development for mobile devices from both my study and in my professional career.</p>",
-      url: "http://www.creuna.dk/nyheder/sidste-nyt/creuna-udvikler-bygger-roskilde-festival-app/"
+      description: "<p>In this project I did graphical design, user experience, concept development and software development of the app. It is the product of voluntary work with <a ng-href=\"https://twitter.com/erik_beus\" target=\"_blank\">Erik Beuschau</a>. The application won the <a ng-href=\"https://labs.roskilde-festival.dk\" target=\"_blank\">Roskilde Festival App Contest</a> two years in a row and has received much positive feedback in the <a ng-href=\"https://itunes.apple.com/us/app/roskilde-festival-music-suggest/id660891678?mt=8\" target=\"_blank\">App Store</a>.</p><p>This project was, for the time being, a culmination of what I have learnt about concept development, design, user experience, user involvement, information architecture and development for mobile devices from both my study and in my professional career.</p>",
+      url: "https://www.creuna.dk/nyheder/sidste-nyt/creuna-udvikler-bygger-roskilde-festival-app/"
     },
     {
       name: "Q8 and F24 app",
@@ -148,7 +148,7 @@ function HomeCtrl($scope, $dialog, socket, StackOverflowService, GitHubService) 
       img_small: "img/q8_f24_news1-small.jpg",
       summary: "Concept and iPhone version of the <b>Q8 and F24 app</b>",
       description: "<p>I was engaged in the concept development of this project and in the core team developing the iPhone version of the <a ng-href=\"https://itunes.apple.com/us/app/q8/id610415262?mt=8\">Q8</a> and <a ng-href=\"https://itunes.apple.com/us/app/f24/id610763983?mt=8\">F24</a> app.</p><p>Development was done in close relation with the user experience designers, as it is with all of Creunas projects. This allowed us to iterate the process and shape the product accordingly. A technical finesse with this project was that Q8/F24 was able to publish campaigns from their CMS to be injected on all platforms - even these native apps. This was nicely integrated with a carousel and a web view to handle the content.</p><p>The purpose of the app is to serve as the main mobile touch point for Q8 and F24 Danmark and as base for developing a handy information source for petroleum stations.</p>",
-      url: "http://www.creuna.dk/nyheder/sidste-nyt/q8-app-genoptanket-med-smarte-features/"
+      url: "https://www.creuna.dk/nyheder/sidste-nyt/q8-app-genoptanket-med-smarte-features/"
     }
   ];
 

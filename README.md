@@ -5,7 +5,7 @@ Personal webpage / resume
 
 - `npm i`
 - `gem install compass`
-- Change `app/js/services.js` to point to dev socket: `var socket = io.connect('http://localhost:8000');`
+- Change `app/js/services.js` to point to dev socket: `const socket = io('https://m.lunoe.dk');`
 - `npm run watch`
 - `npm start`
 

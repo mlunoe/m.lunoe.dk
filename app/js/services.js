@@ -44,7 +44,7 @@
 
     .factory('socket', function ($rootScope) {
       // var socket = io.connect('http://localhost:8000');
-      var socket = io.connect('http://m.lunoe.dk:8000');
+      var socket = io.connect('https://m.lunoe.dk');
 
       return {
         on: function (eventName, callback) {
